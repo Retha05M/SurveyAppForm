@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles_login.css" rel="stylesheet">
+    <title>Login</title>
+</head>
+<body>
+
+
+<!--1. Nav Bar-->
+
+    <div class="nav-bar">
+        <!-- <a class="active" href="index.html">Home</a> -->
+       
+        <!-- <a href="surveyPage.html">Take a Survey</a> -->
+        <!-- <a href='../3.user_portal/user_panel.html'>Login</a> -->
+        <a href='../1.login_pages/login_page.html'>Login</a>
+        <a class="admin_screen" href="../2.admin_portal/admin_panel.html"></a>
+      </div> 
+
+
+      
+<!--2. Sign up form-->
+
+  <div class="sign_up_form_popup">
+      <div class="signup_Form"> 
+        <form action="" class="signUp_form_inputs">
+            <h1 class="title">Sign up</h1>
+
+
+        <!--Name Box-->
+           <div class="input_container">
+              <label for="" class="label">Name</label>
+                <input type="text"
+                       id="signUp_name"
+                       class="input_box">
+             </div>
+
+      <!--Surname Box-->
+              <div class="input_container">
+                <label for="" class="label">Surname</label>
+                  <input type="text"
+                       id="signUp_surname"
+                       class="input_box">
+            </div>
+    
+      <!--Position Box-->
+              <div class="input_container">
+                <label for="" class="label">Position</label>
+                  <input type="text"
+                       id="position"
+                       class="input_box">
+            </div>
+
+      <!--Email Box-->
+            <div class="input_container">
+              <label for="" class="label">Email</label>
+                <input type="text"
+                       id="email"
+                       class="input_box"
+                       required
+                >
+            </div>
+    
+      <!--Password Box-->
+            <div class="input_container">
+                <label for="" class="label">Password</label>
+                  <input type="password"
+                       id="password"
+                       class="input_box"
+                       minlength="3"
+                       required>
+            </div>
+    
+      <!-- Confirm Box
+            <div class="input_container">
+                <label for="" class="label">Confirm Password</label>
+                  <input type="password"
+                       id="confirm_password"
+                       class="input_box"
+                       minlength="3"
+                       required>
+            </div> -->
+
+    
+            <button type="submit" value="submit" id="survey_submitBtn" class="submitBtn">Sign up</button>
+            <!-- <span class="registed">Sign In Here</span> -->
+  
+        </form>
+      </div>
+    </div>
+
+
+<!--3. sign in form-->
+    <div class="sign_in_form_popup">
+      <div class="signin_Form">
+          <form action="" class="signIn_form_inputs">
+            
+            <h1 class="title">Sign In</h1>
+
+    <!--Email Box-->
+            <div class="input_container">
+              <label for="" class="label">Email</label>
+                <input type="text"
+                       id="user_email"
+                       class="input_box">
+            </div>
+
+    <!--Password Box-->
+            <div class="input_container">
+              <label for="" class="label">Password</label>
+                <input type="password"
+                       id="user_password"
+                       class="input_box"
+                       minlength="3"
+                       required>
+            </div>
+
+            <!--Admin-->
+            <div class="input_container ">
+                <p class="p_input"> Are you an Admin?</p>
+                  <select id="admin_options" name="admin" class="admin_dropdown" required>
+                    <option disabled selected value>Select Yes/No</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                 </select>
+            </div>
+
+
+            <button type="submit" value="submit" id="survey_submitBtn" class="submitBtn signInBtn">Sign In</button>
+            <br>
+            <span class="register">Sign Up Here</span>
+
+        </form>
+      </div>
+    </div>
+
+      <script src="login_script.js"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles_admin.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Admin Panel</title>
+</head>
+
+<body>
+    <div id="header">
+        <center><h1 class="welcome">Welcome Back</h1></center>
+    </div>
+
+    <div id="sidebar">
+        <ul>
+            <li class="lists first" id="dashboard">Dashboard</li>
+            <li class="lists" id="create_a_survey">Create a Survey</li>
+            <li class="lists" id="take_a_survey">Take a Survey</li>
+            <li class="logout" id="log_out">Log Out</li>
+        </ul>
+    </div>
+
+    <div id="data"><br>
+        <!-- <h2 class="hello"></h2>  -->
+
+        <div class="report_popup">
+          <div>
+            <h1>Survey Report</h1>
+
+            <div class="show_chart"> 
+              
+                <div>
+                    <canvas id="myChart2"></canvas>
+                 </div>
+
+           </div>
+           </div>
+  
+        </div>
+
+         <!--1. Create a survey form-->
+         <div class="create_survey_form_popup">
+            <div class="create_survey_form">
+
+              <form action="" class="createSurvey_form_inputs">
+                  <h1 class="title">Create a Survey</h1>
+      
+                <!--Survey Name Box-->
+                  <div class="input_container_for_createSurvey">
+                    <label for="" class="label">Enter Survey Name</label>
+                      <input type="text"
+                             class="input_box"
+                             id="create_your_survey">
+                  </div>
+            
+                  <button type="submit" value="submit" id="survey_submitBtn" class="submitBtn surveySaveBtn">Save</button>
+              
+              </form>
+              
+            </div>
+          </div>
+
+          <!--2. Questions form-->
+
+        <div class="questions_form_popup_db">
+              <div class="create_questions_form">
+                          
+                <form action="" class="createQuestion_form_inputs">
+                    <h1 class="title">Create your Questions</h1>
+              
+                  <!--Question Name Box-->
+                    <div class="input_container_for_createQuestion">
+                      <label for="" class="label">Enter your question</label>
+                        <input type="text"
+                              class="input_box"
+                              id="create_your_questions">
+                    </div>
+                    
+                      <button type="submit" value="submit" id="question_submitBtn" class="questionBtn questionSaveBtn">Save</button>
+        
+                      <button type="submit" value="submit" id="finish_submitBtn" class="finishBtn questionFinishBtn">Finish</button>
+                      
+                </form>
+                      
+              </div>
+        </div>
+
+        <div class="survey_list" >
+
+        </div>
+
+<!-- Survey form -->
+      <div class="survey_questions_Form_main">
+        <div class="survey_questions_Form">
+
+          <form action="" class="questions_form_inputs" >
+            <h1 class="title_survey">Survey Form</h1>
+
+            <!-- survey questions div -->
+
+            <button type="submit" value="submit" id="answers_submitBtn">Submit</button>
+          </form>
+
+        </div>
+      </div>
+        
+         
+
+  </div>
+
+
+
+
+         
+
+
+  
+
+
+
+<script src="admin_script.js"></script>
+    
+</body>
+</html>

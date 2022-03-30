@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Panel</title>
+    <link rel="stylesheet" href="styles_user.css">
+</head>
+<body>
+    <div id="header">
+        <center><h1 class="welcome">Welcome Back</h1></center>
+
+    </div>
+
+    <div id="sidebar">
+        <ul>
+            <!-- <li class="lists">Dashboard</li> -->
+            <li class="lists" id="take_a_survey">Take a Survey</li>
+            <li class="logout">Log Out</li>
+        </ul>
+    </div>
+
+    <div id="data"><br>
+        <h2 class="hello"></h2>
+
+                  <!--2. Questions form-->
+
+                  <div class="questions_form_popup_db">
+                    <div class="create_questions_form">
+                                
+                      <form action="" class="createQuestion_form_inputs">
+                          <h1 class="title">Create your Questions</h1>
+                    
+                        <!--Question Name Box-->
+                          <div class="input_container_for_createQuestion">
+                            <label for="" class="label">Enter your question</label>
+                              <input type="text"
+                                    class="input_box"
+                                    id="create_your_questions">
+                          </div>
+                          
+                            <button type="submit" value="submit" id="question_submitBtn" class="questionBtn questionSaveBtn">Save</button>
+              
+                            <button type="submit" value="submit" id="finish_submitBtn" class="finishBtn questionFinishBtn">Finish</button>
+                            
+                      </form>
+                            
+                    </div>
+                  </div>
+
+                  <div class="report_popup">
+                    <h4>Thanking for taking the Survey.</h4>
+                    <di id="chart"></di>
+          
+                  </div>
+
+      <!-- Survey form -->
+      <div class="survey_list" ></div>
+
+      <div class="survey_questions_Form_main">
+        <div class="survey_questions_Form">
+
+          <form action="" class="questions_form_inputs" >
+            <h1 class="title_survey">Survey Form</h1>
+
+            <!-- survey questions div -->
+
+            <button type="submit" value="submit" id="answers_submitBtn">Submit</button>
+          </form>
+
+        </div>
+      </div>
+
+    </div>
+
+    
+    
+    <script src="user_script.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,383 @@
+/* Googlefont Poppins CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+
+/* Get rid of all default margins/paddings. Set typeface */
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-family: "lato", sans-serif;
+}
+/* --------------------------------------------------------------------------------------------------------------------- */
+/*nav bar for the sign in and sign up pages*/
+.nav-bar {
+    background-color: rgb(90, 6, 34);
+    overflow: hidden;
+    padding: 30px;
+    padding-right:700px ;  
+  }
+
+  .nav-bar a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+
+  }
+  
+  .nav-bar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .vid{
+  margin-left: 500px;
+  margin-top: 100px;
+  }
+
+
+.ivideo{
+  box-shadow: 0 10px 25px rgba(92, 99, 105, .7);
+  border: none;
+  position: absolute;
+  left: 0;
+  top:100px;
+}
+/* --------------------------------------------------------------------------------------------------------------------- */
+
+/*Sign up form*/
+
+/*1.form container*/
+.signup_Form,.signin_Form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85vh;
+}
+
+/*1.1. form inputs-------------for the sign in and the sign up*/
+.signUp_form_inputs{
+background-color: white;
+width:500px;
+height: 500px;
+border-radius: 10px;
+padding: 20px 40px;
+box-shadow: 0 10px 25px rgba(92, 99, 105, .4);
+}
+
+.signIn_form_inputs{
+  background-color: white;
+  width:500px;
+  height: 400px;
+  border-radius: 10px;
+  padding: 20px 40px;
+  box-shadow: 0 10px 25px rgba(92, 99, 105, .4);
+  }
+
+/*1.2. form titles--------------------------------------------*/
+.title {
+  font-size: 50px;
+  margin-bottom: 40px;
+}
+
+  .title_survey {
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+  
+
+/*2.inputs container and its input box*/
+/* Main inputs container */
+.input_container{
+  position: relative;
+  height: 45px;
+  width:90%;
+  margin-bottom: 7px;
+}
+
+/*2.1.input box*/
+.input_box {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #DADCE0;
+  border-radius: 7px;
+  font-size: 16px;
+  padding: 0 20px;
+  outline: none;
+  background: none;
+  z-index: 1;
+  color:#a5a8ad;
+}
+
+.p_input{
+  color:#a5a8ad;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top:-4px ;
+  margin-bottom: 5px;
+  margin-left:5px
+  
+}
+
+.admin_dropdown{
+  border: 1px solid #DADCE0;
+  border-radius: 7px;
+  padding: 2px 0px;
+  background-color: white;
+  color:#a5a8ad;
+  
+}
+
+/*3.Labels for the inputs-----------------------------------------------------*/
+.label {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  padding: 0 4px;
+  background-color: white;
+  color: #a5a8ad;
+  font-size: 16px;
+  transition: 0.5s;
+  z-index: 0;
+}
+
+/*3.Input box and Labels */
+.input_box:focus,.label {
+  top: -1px;
+  left: 2px;
+  z-index: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #a5a8ad;
+}
+
+
+.input_box:focus {
+  border: 1px solid  rgb(90, 6, 34) ;
+}
+
+.register{
+  color: #a5a8ad;}
+  
+  .register:hover{
+    margin-bottom: 10px ;
+    width: 10px;
+    color:rgb(90, 6, 34)  ;
+    cursor: pointer;
+  }
+  
+
+/* Form buttons */
+/*4.Submit buttons */
+
+.submitBtn,#nextBtn,#survey_submitBtn {
+  display: block;
+  margin-right: auto;
+  padding: 15px 30px;
+  border: none;
+  background-color: rgb(90, 6, 34);
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 17px;
+  
+}
+
+.submitBtn:hover,#nextBtn:hover,#survey_submitBtn:hover {
+  background-color: rgb(36, 24, 28);
+
+}
+/* --------------------------------------------------------------------------------------------------------------------- */
+
+/*user survey form*/
+
+/*1.form container*/
+
+.survey_Form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+/*1.1. form inputs*/
+.survey_form_inputs{
+  background-color: white;
+  width:500px;
+  height: 500px;
+  border-radius: 10px;
+  padding: 20px 40px;
+  box-shadow: 0 10px 25px rgba(92, 99, 105, .4);
+  }
+  
+
+
+  /*2.inputs container*/
+
+.survey_input_container{
+  position: relative;
+  height: 45px;
+  width:90%;
+  margin-bottom: 7px;
+}
+
+/*2.1.input box*/
+.survey_input_box {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #DADCE0;
+  border-radius: 7px;
+  font-size: 16px;
+  padding: 0 20px;
+  outline: none;
+  background: none;
+  z-index: 1;
+  color:#a5a8ad;
+}
+
+/*3.Labels */
+
+
+.survey_label {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  padding: 0 4px;
+  background-color: white;
+  color: #a5a8ad;
+  font-size: 16px;
+  transition: 0.5s;
+  z-index: 0;
+}
+
+/*3.Input box and Labels */
+
+
+/* .input_box:focus,.label {
+  top: -1px;
+  left: 2px;
+  z-index: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #a5a8ad;
+}
+
+
+.input_box:focus {
+  border: 1px solid  rgb(90, 6, 34) ;
+}
+ */
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+
+
+ /*questions survey form*/
+
+
+.survey_questions_Form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+/*1.1. form inputs*/
+.questions_form_inputs{
+  background-color: white;
+  width:500px;
+  height: 500px;
+  border-radius: 10px;
+  padding: 30px 40px;
+  box-shadow: 0 10px 25px rgba(92, 99, 105, .4);
+  }
+
+
+
+  /*2.inputs container*/
+
+  .questions_input_container{
+    position: relative;
+    height: 45px;
+    width:100%;
+    margin-bottom: 7px;
+  }
+  
+  /*2.1.input box*/
+  .questions_input_box {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #DADCE0;
+    border-radius: 7px;
+    font-size: 16px;
+    padding: 0 20px;
+    outline: none;
+    background: none;
+    z-index: 0;
+    color:#a5a8ad;
+  }
+  
+
+  .question_label {
+    color: #a5a8ad;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 0 4px;
+    background-color: white;
+    color: #a5a8ad;
+    font-size: 16px;
+    transition: 0.5s;
+    z-index: 0;
+  }
+
+  /*3.Input box and Labels */
+ .questions_input_box:focus,.question_label {
+  top: -1px;
+  left: 2px;
+  z-index: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #a5a8ad;
+}
+
+/* --------------------------------------Pop ups main containers for the sign up and sign in------------------------------------------------------------------------------- */
+
+.survey_questions_Form_main{
+  display: none;
+}
+
+.user_Form_main{
+  display: block;
+}
+
+
+/* ------------------------------------- Login script styling pop ups forms-------------------------------------------------------------------------------- */
+
+.sign_up_form_popup{
+  display: none;
+}
+
+.sign_in_form_popup{
+  display: block;
+}
+
+
+.admin_screen{
+  visibility: hidden;
+}

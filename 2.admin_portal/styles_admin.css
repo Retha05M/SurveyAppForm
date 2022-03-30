@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+/* --------------------------------------------------------------------------------------------------------------------- */
+/* Get rid of all default margins/paddings. Set typeface */
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-family: "lato", sans-serif;
+  background-color:#fdf2f7
+}
+
+/* ---------------------------------Dashboard styling---------------------------------------------------------------------*/
+/*1. Header div  */
+#header{
+  width: 100%;
+  height: 150px;
+  background-color: rgb(90, 6, 34);
+  color: white;
+  overflow: hidden;
+}
+
+/* .welcome{
+  padding-top:20px;
+
+} */
+
+/* 2. Sidebar div */
+#sidebar{
+  height: 760px;
+  width: 250px;
+  margin-top: -15px;
+  margin-left: -20px;
+  background-color: rgba(90, 6, 34, 0.801);
+  float: left;
+}
+
+.lists{
+  padding-top:20px;
+  padding-right:20px ;
+  padding-bottom:20px ;
+  padding-left:0px ;
+  border-bottom: 2px solid grey;
+  list-style-type: none;
+  
+}
+
+.lists:hover{
+  color:white;
+  background-color:#a5a8ad;
+  cursor: pointer;
+}
+
+/* 3. Data Reporting div */
+#data{
+  height: 750px;
+  background-color:#fdf2f7 ;
+  padding-left: 100px;
+  width: 1420px;
+}
+
+.hello{
+  padding-left: 160px;
+}
+
+/* 4. Logout */
+.logout{
+  margin: 500px 40px;
+  list-style-type: none;
+  display: block;
+  margin-right: auto;
+  padding: 15px 10px;
+  border: none;
+  background-color: rgb(90, 6, 34);
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 17px;
+  width: 80px;
+  align-content: center;
+}
+
+.logout:hover{
+  list-style-type: none;
+  cursor: pointer;
+  color:white;
+  background-color: rgb(36, 24, 28);
+}
+
+
+/* 0. -----------------------------------Forms(Create survey form)--------------------------------------------------- */
+
+/* 1. Pop ups forms(main div)-------- */
+.create_survey_form_popup{
+  display: none;
+}
+
+/* 1.1. Create a survey form (2nd div of the form)------- */
+.create_survey_form{
+  /* position: absolute; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 30vh; */
+  height: 40vh;
+  /* height: 48vh;
+  width: 100%; */
+}
+
+/* Form class for stying the form labels and inputs */
+.createSurvey_form_inputs{
+  background-color: white;
+  width:500px;
+  height: 250px;
+  border-radius: 10px;
+  padding: 20px 40px;
+  box-shadow: 0 10px 25px rgba(92, 99, 105, .4);
+  }
+
+.title {
+  font-size: 50px;
+  margin-bottom: 40px;
+  }
+
+/* Survey Name box container (label and input div)*/
+.input_container_for_createSurvey{
+  position: relative;
+  height: 50px;
+  width:80%;
+  margin-bottom: 10px;
+}
+
+/*3.Labels for the inputs---------*/
+.label {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  padding: 0 4px;
+  background-color: white;
+  color: #a5a8ad;
+  font-size: 16px;
+  transition: 0.5s;
+  z-index: 0;
+}
+
+/*2.1.input box*/
+.input_box {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #DADCE0;
+  border-radius: 7px;
+  font-size: 16px;
+  padding: 0 20px;
+  outline: none;
+  background: none;
+  z-index: 1;
+  color:#a5a8ad;
+}
+
+/*3.Input box and Labels */
+.input_box:focus,.label {
+  top: -1px;
+  left: 2px;
+  z-index: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #a5a8ad;
+}
+
+.input_box:focus {
+  border: 1px solid  rgb(90, 6, 34) ;
+}
+
+/*4.Submit buttons */
+
+.submitBtn{
+  display: block;
+  margin-right: auto;
+  padding: 15px 30px;
+  border: none;
+  background-color: rgb(90, 6, 34);
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 17px;
+  
+}
+
+.submitBtn:hover {
+  background-color: rgb(36, 24, 28);
+
+}
+
+
+/* -------------------------------Script styling for the create survey form-------------------------------------------------------------------------------------- */
+/* 2. Li items created via dom---------------- */
+.survey_list li{
+  margin-left: 60px;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+li.SurveyNames {
+  margin: 20px 0px;
+}
+
+.surveyDiv{
+  display: block;
+}
+
+/* 1. ------------------------Forms(Create questions form)------------------------------------------------------------------------------- */
+.questions_form_popup_db{
+  display: none;
+}
+
+.report_popup{
+   display: none;
+  }
+
+.create_questions_form{
+  /* position: absolute; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 85vh; */
+  height: 55vh;
+  /* height: 48vh;
+  width: 100%; */
+}
+
+.createQuestion_form_inputs{
+  background-color: white;
+  width:600px;
+  height: 45  0px;
+  border-radius: 10px;
+  padding: 20px 40px;
+  box-shadow: 0 10px 25px rgba(92, 99, 105, .4);
+  }
+
+  .input_container_for_createQuestion{
+    position: relative;
+    height: 50px;
+    width:80%;
+    margin-bottom: 10px;
+  }
+
+  .questionBtn{
+    display: block;
+    margin-right: auto;
+    padding: 15px 30px;
+    border: none;
+    background-color: rgb(90, 6, 34);
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 17px;
+  }
+  
+  .questionBtn:hover {
+    background-color: rgb(36, 24, 28);
+  }
+
+  .finishBtn{
+    display: block;
+    margin-right: auto;
+    padding: 15px 30px;
+    border: none;
+    background-color: rgb(90, 6, 34);
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 17px;
+    
+  }
+  
+  .finishBtn:hover {
+    background-color: rgb(36, 24, 28);
+  }
+
+
+/*1.1. form inputs*/
+.questions_form_inputs{
+  background-color: white;
+  width:500px;
+  height: 500px;
+  border-radius: 10px;
+  padding: 30px 40px;
+  box-shadow: 0 10px 25px rgba(92, 99, 105, .4);
+  }
+
+
+
+  /*2.survey container*/
+
+  .survey_questions_Form_main{
+    display: none;
+  }
+
+  .survey_questions_Form{
+    /* position: absolute; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 85vh; */
+    height: 55vh;
+    /* height: 48vh;
+    width: 100%; */
+  }
+
+  .questions_form_inputs{
+    background-color: white;
+    width:600px;
+    height: 320px;
+    border-radius: 10px;
+    padding: 20px 40px;
+    box-shadow: 0 10px 25px rgba(92, 99, 105, .4);
+    }
+
+  .questions_input_container{
+    position: relative;
+    height: 45px;
+    width:100%;
+    margin-bottom: 7px;
+    
+  }
+  
+  /*2.1.input box*/
+  .questions_input_box {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #DADCE0;
+    border-radius: 7px;
+    font-size: 16px;
+    padding: 0 20px;
+    outline: none;
+    background: none;
+    z-index: 0;
+    color:#a5a8ad;
+   
+  }
+  
+
+  .question_label {
+    color: #a5a8ad;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 0 4px;
+    background-color: white;
+    font-size: 16px;
+    transition: 0.5s;
+    z-index: 0;
+    
+  }
+
+  /*3.Input box and Labels */
+ .questions_input_box:focus,.question_label {
+  top: -1px;
+  left: 2px;
+  z-index: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #a5a8ad;
+  
+}
+
+#answers_submitBtn {
+  display: block;
+  margin-right: auto;
+  padding: 15px 30px;
+  border: none;
+  background-color: rgb(90, 6, 34);
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 17px;
+  
+}
+
+#answers_submitBtn:hover {
+  background-color: rgb(36, 24, 28);
+
+}
+
+
+.surveyList {
+  position: relative;
+  left:112px;
+  /* display: flex; */
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.SurveyNames {
+  width: 160px;
+  padding: 40px 70px;
+  background-color: rgb(216, 203, 206);
+  text-align: center;
+}
+
+h4 {
+  position: relative;
+  left: 25px;
+}
+
+.report_popup {
+  visibility: hidden;
+  background-color: rgb(0,0,0,0.25);
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: auto;
+
+}
+
+.report_popup > div {
+  background-color: rgb(218, 211, 211);
+  width: 88%;
+  height: 80%;
+  margin-top: 155px;
+  margin-left: 215px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25),
+  0 10px 10px rgba(0,0,0,0.22);
+}
+
+
+canvas {
+  max-width: 75%;
+  max-height: 500px;
+  position: relative;
+  left: 250px;
+  top: 70px;
+  /* margin: 0px auto; */
+  /* max-height: 35%; */
+  /* background-color: black; */
+}
+
+/* .radio_types{
+  color: #a5a8ad;
+} */
+
